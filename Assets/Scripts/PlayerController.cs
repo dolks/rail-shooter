@@ -44,9 +44,7 @@ public class PlayerController : MonoBehaviour
         {
             laserLeftEmission.enabled = false;
             laserRightEmission.enabled = false;
-
         }
-
     }
 
     private void ProcessRotation()

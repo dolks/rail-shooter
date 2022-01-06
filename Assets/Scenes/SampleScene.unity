@@ -515,6 +515,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 616522660190788083, guid: 4a74b2e8eca46407b82278904582571d, type: 3}
+      propertyPath: lengthInSec
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 616522660190788083, guid: 4a74b2e8eca46407b82278904582571d, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 616522660190788083, guid: 4a74b2e8eca46407b82278904582571d, type: 3}
+      propertyPath: TrailModule.sizeAffectsWidth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616522660190788083, guid: 4a74b2e8eca46407b82278904582571d, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 1540077887071616046, guid: 4a74b2e8eca46407b82278904582571d, type: 3}
       propertyPath: m_Name
       value: Player

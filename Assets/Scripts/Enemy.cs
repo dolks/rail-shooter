@@ -10,7 +10,9 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        enemyAnimator = GetComponentInParent<Animator>();
+        enemyAnimator = GetComponentInParent<Animator>() ? GetComponentInParent<Animator>() : GetComponent<Animator>() ? GetComponent<Animator>() : null;
+        Rigidbody enemyRigidbody = gameObject.AddComponent<Rigidbody>();
+        enemyRigidbody.useGravity = false;
     }
 
     private void OnParticleCollision(GameObject other)
@@ -20,7 +22,10 @@ public class Enemy : MonoBehaviour
 
     void Hit()
     {
-        enemyAnimator.Play("Enemy Hit");
+        if (enemyAnimator)
+        {
+            enemyAnimator.Play("Enemy Hit");
+        }
         health--;
         if (health <= 0)
         {

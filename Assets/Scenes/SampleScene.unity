@@ -308,7 +308,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 40b35457734794383aff0aa8e0b5a224, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.52
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -910,30 +910,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1477448721 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5889588513565967324, guid: 3620d80e9cd6943b1bd47a84a7141bb0, type: 3}
+--- !u!95 &1477448722 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1477448722, guid: 3620d80e9cd6943b1bd47a84a7141bb0, type: 3}
   m_PrefabInstance: {fileID: 601062439}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1477448722
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477448721}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1477448725 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6554942119883200870, guid: 3620d80e9cd6943b1bd47a84a7141bb0, type: 3}

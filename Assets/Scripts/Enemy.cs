@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     int health = 2;
     [SerializeField] ParticleSystem deathVFX;
+    [SerializeField] AudioClip deathSFX;
     Animator enemyAnimator;
 
     private void Start()
@@ -36,6 +37,10 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         ParticleSystem vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
+        if (deathSFX)
+        {
+            AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position);
+        }
         FindObjectOfType<ScoreBoard>().IncreaseScore(30);
         Destroy(gameObject);
         Destroy(vfx.gameObject, 3);

@@ -63,6 +63,7 @@ GameObject:
   - component: {fileID: 1540077887823224800}
   - component: {fileID: 1540077887823224807}
   - component: {fileID: 1540077887823224806}
+  - component: {fileID: 6202717888100163722}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -135,6 +136,66 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540077887823224805}
   m_Enabled: 1
+--- !u!114 &6202717888100163722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540077887823224805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 1540077887823224800}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 1
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 1
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1001 &1540077886821568357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -193,6 +254,70 @@ PrefabInstance:
     - target: {fileID: 8331847497650552036, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
       propertyPath: m_Name
       value: Player Explosion VFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.ctime2
+      value: 42598
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.b
+      value: 0.74509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.g
+      value: 0.09554932
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.g
+      value: 0.3607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.r
+      value: 0.57432723
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key2.b
+      value: 0.07249023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key2.g
+      value: 0.07344527
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key2.r
+      value: 0.084905684
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key3.b
+      value: 0.9137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key3.g
+      value: 0.78601474
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key3.r
+      value: 0.14117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key4.b
+      value: 0.65882355
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key4.g
+      value: 0.22745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331847497650552038, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key4.r
+      value: 0.4227838
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 821cb84404cdb734481db5d7b905b37a, type: 3}
